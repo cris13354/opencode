@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/*
+ * Identidad visual de QuizLab
+ * ---------------------------
+ * - Fondo crema cálido + tinta casi negra: alto contraste y aspecto "editorial".
+ * - Un color principal (coral) para acciones, y un acento lima para destacar.
+ * - Bordes de 2px y sombras desplazadas: estilo "sticker", reconocible al compartir.
+ * Los colores de las tarjetas de cada test (coral, violet, blue, green, yellow)
+ * están también en src/lib/quiz/colors.ts para la imagen generada.
+ */
+@theme {
+  --color-ink: #16131f;
+  --color-ink-soft: #4a4658;
+  --color-cream: #fbf7f0;
+  --color-paper: #ffffff;
+  --color-line: #e7e0d4;
+  --color-coral: #ff5a3c;
+  --color-coral-dark: #e0401f;
+  --color-lime: #d4f55b;
+  --color-quiz-coral: #ffb4a3;
+  --color-quiz-violet: #c9b8ff;
+  --color-quiz-blue: #a8d4ff;
+  --color-quiz-green: #a9eec4;
+  --color-quiz-yellow: #ffe27a;
+  --color-success: #1f8a4c;
+  --color-danger: #c42b1c;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-bricolage), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-sticker: 4px 4px 0 0 var(--color-ink);
+  --shadow-sticker-sm: 2px 2px 0 0 var(--color-ink);
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* Enfoque visible y consistente para navegación con teclado. */
+:focus-visible {
+  outline: 3px solid var(--color-coral);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in 0.35s ease-out both;
+}
