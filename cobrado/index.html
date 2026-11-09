@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cobrado · Cobra tus facturas atrasadas sin perder al cliente</title>
+    <meta
+      name="description"
+      content="Cobrado te dice qué mensaje enviar cada día, calcula los intereses y los 40 € que reconoce la Ley 3/2004 y prepara el requerimiento formal y el expediente para el monitorio."
+    />
+    <meta name="theme-color" content="#0f6b5c" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f6b5c'/%3E%3Cpath d='M9 17l5 5 9-11' stroke='white' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./app/styles.css" />
+    <link rel="stylesheet" href="./landing/landing.css" />
+  </head>
+  <body class="landing">
+    <header class="topbar lp-top">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8" /><path d="M9 17l5 5 9-11" /></svg></span>
+        Cobrado
+      </a>
+      <nav class="lp-nav" aria-label="Secciones">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#precio">Precio</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a class="btn primary small" href="./app/">Probar el prototipo</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="pill">Para autónomos y pequeñas empresas en España</p>
+          <h1>Cobra tus facturas atrasadas sin pelearte con el cliente.</h1>
+          <p class="hero-lead">
+            Cobrado te dice qué mensaje enviar cada día, calcula los intereses y los 40&nbsp;€ que te reconoce la ley y,
+            si nada funciona, te deja listo el requerimiento formal y el expediente para reclamar en el juzgado.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="./app/">Probar el prototipo gratis</a>
+            <a class="btn" href="#calculadora">¿Cuánto me deben de verdad?</a>
+          </div>
+          <ul class="hero-points">
+            <li>Sin registro ni tarjeta</li>
+            <li>Tus datos no salen de tu navegador</li>
+            <li>Tú decides qué se envía y cuándo</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-label="Ejemplo ilustrativo de la pantalla de una factura">
+          <div class="mock card">
+            <p class="eyebrow">Ejemplo ilustrativo · Factura 2026-031</p>
+            <div class="mock-head">
+              <strong>Reformas Ejemplo SL</strong>
+              <span class="badge danger">45 días de retraso</span>
+            </div>
+            <div class="mock-next">
+              <p class="eyebrow">Siguiente paso · hoy</p>
+              <p class="mock-title">Requerimiento formal y propuesta de negociación</p>
+              <p class="muted">Ya enviaste recordatorio, seguimiento y aviso firme. Toca dejar constancia por burofax.</p>
+            </div>
+            <dl class="mock-sum">
+              <div><dt>Pendiente</dt><dd>2.420,00&nbsp;€</dd></div>
+              <div><dt>Intereses de demora</dt><dd>31,03&nbsp;€</dd></div>
+              <div><dt>Costes de cobro</dt><dd>40,00&nbsp;€</dd></div>
+              <div class="total"><dt>Reclamable hoy</dt><dd>2.491,03&nbsp;€</dd></div>
+            </dl>
+            <div class="mock-steps">
+              <span class="done">Recordatorio</span><span class="done">Seguimiento</span><span class="done">Aviso firme</span><span class="current">Requerimiento</span><span>Monitorio</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="lp-container">
+          <h2 class="section-title">Reclamar una factura es incómodo, lento y lleno de dudas</h2>
+          <div class="pains">
+            <article>
+              <h3>No sabes cuándo ni cómo insistir</h3>
+              <p>Escribir otra vez a un cliente que no paga cuesta. Si eres demasiado blando, se alarga; si te pasas, pierdes al cliente.</p>
+            </article>
+            <article>
+              <h3>No sabes cuánto puedes exigir</h3>
+              <p>Entre empresas, la Ley 3/2004 te da derecho a intereses de demora desde el vencimiento y a 40&nbsp;€ por factura, aunque no los hayas pactado. Calcularlos bien por semestres no es trivial.</p>
+            </article>
+            <article>
+              <h3>El juzgado ahora pide más</h3>
+              <p>Desde abril de 2025, para presentar una demanda (también un monitorio) hay que acreditar un intento previo de negociación. Sin él, la reclamación puede no admitirse.</p>
+            </article>
+          </div>
+          <p class="fact">
+            Según el informe de la Plataforma Multisectorial contra la Morosidad presentado en abril de 2026, el plazo medio de pago fue de
+            <strong>67 días en el sector privado y 70 en el público</strong>, por encima del máximo legal de 60 días.
+            <a href="https://forbes.es/economia/907227/el-85-de-las-grandes-empresas-incumple-los-plazos-legales-de-pago-segun-pmcm/" target="_blank" rel="noopener">Fuente</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="como-funciona" class="lp-container">
+        <h2 class="section-title">Cómo funciona</h2>
+        <ol class="how">
+          <li>
+            <span class="how-n">1</span>
+            <h3>Añade lo que te deben</h3>
+            <p>A mano en un minuto o importando el CSV de tu programa de facturación. Solo hace falta cliente, número, importe y fechas.</p>
+          </li>
+          <li>
+            <span class="how-n">2</span>
+            <h3>Recibe el siguiente paso</h3>
+            <p>Cada factura avanza por una escalera: aviso previo, recordatorio, seguimiento, aviso firme y requerimiento formal, con tiempos razonables entre cada uno.</p>
+          </li>
+          <li>
+            <span class="how-n">3</span>
+            <h3>Envía el mensaje adecuado</h3>
+            <p>Borradores con tus datos y las cifras reales, en tono cercano o formal. Los copias, los abres en tu email o en WhatsApp y los editas antes de enviar.</p>
+          </li>
+          <li>
+            <span class="how-n">4</span>
+            <h3>Si no paga, el expediente está listo</h3>
+            <p>Requerimiento con invitación a negociar para enviar por burofax, cronología de gestiones, desglose de intereses y lista de documentos para el monitorio.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="calculadora" class="band">
+        <div class="lp-container">
+          <h2 class="section-title">¿Cuánto puedes reclamar por una factura atrasada?</h2>
+          <p class="section-lead">Calcula los intereses de demora por semestres y la indemnización de 40&nbsp;€. Se calcula en tu navegador; no se envía nada.</p>
+          <div class="card" id="calc-host"></div>
+        </div>
+      </section>
+
+      <section class="lp-container">
+        <h2 class="section-title">Qué hace y qué no hace</h2>
+        <div class="does">
+          <div class="card">
+            <h3>Cobrado sí</h3>
+            <ul class="ticks">
+              <li>Te dice qué hacer hoy con cada factura y te recuerda el siguiente paso.</li>
+              <li>Genera recordatorios, aviso firme y requerimiento formal con cifras reales.</li>
+              <li>Calcula intereses por semestre (con el tipo del BOE) y los 40&nbsp;€ por factura.</li>
+              <li>Distingue clientes empresa, Administración y particular, porque la ley no es la misma.</li>
+              <li>Pausa la reclamación si hay promesa de pago, plan de pagos o discrepancia.</li>
+              <li>Prepara un expediente imprimible para el monitorio o para tu abogado.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Cobrado no</h3>
+            <ul class="crosses">
+              <li>No envía nada en tu nombre: tú revisas y envías cada mensaje.</li>
+              <li>No es un despacho de abogados ni presenta escritos en el juzgado.</li>
+              <li>No se queda con un porcentaje de lo que cobras.</li>
+              <li>No sustituye a tu programa de facturación: trabaja junto a él.</li>
+              <li>No guarda tus datos en ningún servidor (en esta versión, solo en tu navegador).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="precio" class="band">
+        <div class="lp-container">
+          <h2 class="section-title">Precio de lanzamiento <span class="badge warning">en validación</span></h2>
+          <p class="section-lead">Todavía no cobramos nada. Estos son los precios que queremos validar contigo: si te apuntas, nos ayudas a fijarlos.</p>
+          <div class="plans">
+            <article class="card plan">
+              <h3>Gratis</h3>
+              <p class="price">0&nbsp;€</p>
+              <ul class="ticks">
+                <li>Calculadora de intereses</li>
+                <li>Hasta 2 facturas en seguimiento</li>
+                <li>Recordatorios y aviso firme</li>
+              </ul>
+            </article>
+            <article class="card plan featured">
+              <h3>Pro</h3>
+              <p class="price">9&nbsp;€<span>/mes</span></p>
+              <p class="muted">o 79&nbsp;€ al año</p>
+              <ul class="ticks">
+                <li>Facturas ilimitadas</li>
+                <li>Requerimiento formal y expediente</li>
+                <li>Importación CSV y copia de seguridad</li>
+              </ul>
+            </article>
+            <article class="card plan">
+              <h3>Por expediente</h3>
+              <p class="price">19&nbsp;€<span> pago único</span></p>
+              <ul class="ticks">
+                <li>Para un impago puntual</li>
+                <li>Requerimiento formal y expediente de esa factura</li>
+                <li>Sin suscripción</li>
+              </ul>
+            </article>
+          </div>
+
+          <form class="card waitlist" id="waitlist" novalidate>
+            <h3>Quiero probarlo y opinar sobre el precio</h3>
+            <div class="grid-2">
+              <div class="field">
+                <label for="wl-email">Email</label>
+                <input id="wl-email" name="email" type="email" required autocomplete="email" placeholder="tu@email.com" />
+              </div>
+              <div class="field">
+                <label for="wl-profile">Eres</label>
+                <select id="wl-profile" name="profile">
+                  <option value="autonomo">Autónomo / freelance</option>
+                  <option value="pyme">Pequeña empresa</option>
+                  <option value="gestoria">Gestoría o asesoría</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="wl-late">Facturas cobradas tarde en los últimos 12 meses</label>
+                <select id="wl-late" name="late">
+                  <option value="0">Ninguna</option>
+                  <option value="1-2">1 o 2</option>
+                  <option value="3-10">De 3 a 10</option>
+                  <option value="10+">Más de 10</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="wl-plan">¿Qué opción elegirías hoy?</label>
+                <select id="wl-plan" name="plan">
+                  <option value="free">Solo la gratuita</option>
+                  <option value="pro">Pro, 9 €/mes</option>
+                  <option value="single">Por expediente, 19 €</option>
+                  <option value="none">Ninguna me encaja</option>
+                </select>
+              </div>
+            </div>
+            <label class="check"><input type="checkbox" name="consent" required /> <span>Acepto que me escribáis para probar Cobrado y preguntarme mi opinión.</span></label>
+            <div class="row-actions">
+              <button class="btn primary" type="submit">Apuntarme</button>
+              <p class="form-status muted" role="status"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="preguntas" class="lp-container faq">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Puedo cobrar intereses aunque no los pusiera en la factura?</summary>
+          <p>Entre empresas y profesionales, sí: la Ley 3/2004 establece que los intereses de demora se deben automáticamente desde el vencimiento, y añade 40&nbsp;€ por costes de cobro por cada factura. Puedes decidir no reclamarlos; Cobrado te permite ofrecer esa renuncia si el cliente paga ya.</p>
+        </details>
+        <details>
+          <summary>¿Y si mi cliente es un particular?</summary>
+          <p>La Ley 3/2004 no se aplica a consumidores. Cobrado lo tiene en cuenta: no incluye los 40&nbsp;€ y calcula el interés legal del dinero solo desde que reclamas formalmente.</p>
+        </details>
+        <details>
+          <summary>¿Cobrado envía los mensajes por mí?</summary>
+          <p>No. Prepara el texto y lo abre en tu email o WhatsApp para que lo revises y lo envíes tú. El requerimiento formal lo imprimes o guardas en PDF para enviarlo por burofax.</p>
+        </details>
+        <details>
+          <summary>¿Sustituye a un abogado?</summary>
+          <p>No. Te ayuda a hacer bien la parte amistosa y a llegar ordenado al monitorio, que en su petición inicial no exige abogado ni procurador. Si el deudor se opone y la deuda supera 2.000&nbsp;€, necesitarás abogado y procurador.</p>
+        </details>
+        <details>
+          <summary>¿Dónde se guardan mis datos?</summary>
+          <p>En esta versión, solo en el almacenamiento local de tu navegador. No hay cuentas ni servidores. Puedes exportar una copia de seguridad cuando quieras.</p>
+        </details>
+        <details>
+          <summary>¿De dónde salen los tipos de interés?</summary>
+          <p>Del tipo legal de demora que publica el Tesoro en el BOE cada semestre (tipo del BCE más 8 puntos). La tabla indica qué valores están verificados y puedes actualizarla tú mismo.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Cobrado es un prototipo de validación. No es un despacho de abogados ni presta asesoramiento jurídico: los textos son borradores y las cifras deben revisarse.
+      </p>
+    </footer>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <script type="module" src="./landing/landing.js"></script>
+  </body>
+</html>
