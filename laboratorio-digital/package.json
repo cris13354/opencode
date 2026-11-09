@@ -1,0 +1,13 @@
+{
+  "name": "laboratorio-digital",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Centro de operaciones de EL LABORATORIO DIGITAL: Content Studio local y landing page.",
+  "type": "module",
+  "scripts": {
+    "start": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts",
+    "test": "bun test",
+    "backup": "bun server/backup.ts"
+  }
+}
