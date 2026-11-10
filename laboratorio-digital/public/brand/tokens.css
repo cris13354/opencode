@@ -1,0 +1,62 @@
+/* EL LABORATORIO DIGITAL — tokens de marca compartidos por la landing y el Studio. */
+:root {
+  color-scheme: dark;
+
+  /* Fondos y superficies */
+  --bg: #07080f;
+  --bg-elev: #0b0e1b;
+  --surface: #10142a;
+  --surface-2: #161b36;
+  --surface-3: #1d2344;
+  --border: #222a4b;
+  --border-strong: #343e6e;
+
+  /* Texto */
+  --text: #e9ecf7;
+  --text-muted: #a0a8c6;
+  --text-faint: #6f789c;
+
+  /* Color de marca */
+  --blue: #2f6bff;          /* Azul Ensayo */
+  --blue-bright: #6390ff;
+  --violet: #8b5cf6;        /* Violeta Hipótesis */
+  --violet-bright: #ad8eff;
+  --cyan: #38bdf8;          /* Cian Señal */
+  --teal: #2dd4bf;          /* Verde Matraz */
+  --gradient: linear-gradient(135deg, var(--blue) 0%, var(--violet) 100%);
+
+  /* Pilares */
+  --pillar-ia: var(--blue-bright);
+  --pillar-negocios: var(--violet-bright);
+  --pillar-marketing: var(--cyan);
+  --pillar-experimentos: var(--teal);
+
+  /* Estados (solo para feedback) */
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --info: var(--cyan);
+
+  /* Tipografía: pila de sistema, sin descargas externas */
+  --font-sans: "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial,
+    sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Cascadia Code", ui-monospace, Menlo, Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --shadow: 0 10px 30px -12px rgb(0 0 0 / 0.6);
+  --ring: 0 0 0 3px rgb(47 107 255 / 0.45);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

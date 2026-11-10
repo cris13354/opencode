@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Content Studio · EL LABORATORIO DIGITAL</title>
+    <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/brand/tokens.css" />
+    <link rel="stylesheet" href="/studio/studio.css" />
+    <script type="module" src="/studio/js/app.js"></script>
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+        <a class="brand" href="#/">
+          <img src="/brand/simbolo.svg" alt="" />
+          <span><strong>EL LABORATORIO</strong><span>DIGITAL</span></span>
+        </a>
+        <nav class="nav" id="nav"></nav>
+        <div class="sidebar-foot">
+          <p>Content Studio · uso local</p>
+          <p><a href="/" target="_blank" rel="noopener">Ver landing page ↗</a></p>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <button class="icon-btn" id="menu" type="button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+          <a class="brand" href="#/">
+            <img src="/brand/simbolo.svg" alt="" />
+            <span><strong>EL LABORATORIO</strong><span>DIGITAL</span></span>
+          </a>
+        </header>
+        <main class="view" id="view" tabindex="-1">
+          <noscript>El Content Studio necesita JavaScript.</noscript>
+        </main>
+      </div>
+    </div>
+    <dialog id="modal" aria-labelledby="modal-title"></dialog>
+    <div id="toasts" role="status" aria-live="polite"></div>
+  </body>
+</html>

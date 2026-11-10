@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">EL LABORATORIO DIGITAL — símbolo</title>
+  <defs>
+    <linearGradient id="g" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F6BFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#g)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 8h20"/>
+    <path d="M26 8v16L11.4 49.3C10.2 51.6 11.6 54 14.2 54h35.6c2.6 0 4-2.4 2.8-4.7L38 24V8"/>
+    <path d="M18 46l9-6.5 7 4.5 7-8" stroke-width="2.6"/>
+  </g>
+  <g fill="url(#g)">
+    <circle cx="18" cy="46" r="2.4"/>
+    <circle cx="27" cy="39.5" r="2.4"/>
+    <circle cx="34" cy="44" r="2.4"/>
+    <circle cx="41" cy="36" r="2.4"/>
+    <circle cx="32" cy="17" r="1.7"/>
+  </g>
+</svg>
