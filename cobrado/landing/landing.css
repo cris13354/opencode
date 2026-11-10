@@ -1,0 +1,366 @@
+/* Estilos propios de la landing; reutiliza tokens y componentes de la app. */
+
+.landing {
+  padding-bottom: 0;
+}
+
+.lp-top {
+  gap: 1rem;
+}
+
+.lp-nav {
+  display: flex;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+
+.lp-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 550;
+}
+
+.lp-nav a:hover {
+  color: var(--text);
+}
+
+.lp-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.band {
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.section-lead {
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 64ch;
+  margin-bottom: 1.5rem;
+}
+
+/* Hero */
+
+.hero {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 7vw, 5.5rem) 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+.pill {
+  display: inline-block;
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  font-weight: 650;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+
+.hero-lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  color: var(--muted);
+  max-width: 56ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.hero-actions .btn {
+  min-height: 48px;
+  padding: 0.7rem 1.3rem;
+  font-size: 1rem;
+}
+
+.hero-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.hero-points li::before,
+.ticks li::before {
+  content: "✓";
+  color: var(--brand);
+  font-weight: 800;
+  margin-right: 0.45rem;
+}
+
+.mock {
+  transform: rotate(-1deg);
+  box-shadow: 0 30px 60px -20px rgb(15 60 50 / 0.35);
+  display: grid;
+  gap: 0.9rem;
+}
+
+.mock-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.mock-next {
+  border-left: 4px solid var(--warning);
+  background: var(--warning-soft);
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+}
+
+.mock-next p {
+  margin: 0;
+}
+
+.mock-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.mock-sum {
+  margin: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.mock-sum div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+}
+
+.mock-sum dt {
+  color: var(--muted);
+}
+
+.mock-sum dd {
+  margin: 0;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.mock-sum .total {
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.mock-sum .total dd {
+  color: var(--brand-strong);
+}
+
+.mock-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.mock-steps span {
+  font-size: 0.75rem;
+  font-weight: 650;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+}
+
+.mock-steps .done {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.mock-steps .current {
+  background: var(--brand);
+  color: #fff;
+}
+
+/* Secciones */
+
+.pains {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.pains article {
+  border-top: 3px solid var(--brand);
+  padding-top: 1rem;
+}
+
+.pains p {
+  color: var(--muted);
+}
+
+.fact {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  font-size: 0.95rem;
+}
+
+.how {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.how p {
+  color: var(--muted);
+}
+
+.how-n {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.does {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.ticks,
+.crosses {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.crosses li::before {
+  content: "✕";
+  color: var(--muted);
+  font-weight: 800;
+  margin-right: 0.45rem;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.plan .price {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0.25rem 0;
+}
+
+.plan .price span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.plan.featured {
+  border: 2px solid var(--brand);
+}
+
+.waitlist {
+  display: grid;
+  gap: 1rem;
+  max-width: 760px;
+}
+
+.form-status {
+  margin: 0;
+}
+
+.faq details {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 650;
+  font-size: 1.05rem;
+}
+
+.faq details p {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .pains,
+  .does,
+  .plans {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .how {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lp-nav {
+    display: none;
+  }
+
+  .mock {
+    transform: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .landing {
+    padding-bottom: 0;
+  }
+
+  .lp-container {
+    padding: 3rem 1rem;
+  }
+
+  .how {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

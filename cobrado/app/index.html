@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cobrado · Recupera tus facturas impagadas</title>
+    <meta name="description" content="Recordatorios, intereses de la Ley 3/2004, requerimiento formal y expediente para el monitorio. Todo en tu navegador." />
+    <meta name="theme-color" content="#0f6b5c" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f6b5c'/%3E%3Cpath d='M9 17l5 5 9-11' stroke='white' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#view">Saltar al contenido</a>
+    <header class="topbar no-print">
+      <a class="brand" href="#/">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8" /><path d="M9 17l5 5 9-11" /></svg>
+        </span>
+        Cobrado
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#/" data-nav="panel"><span class="nav-ico" data-icon="home"></span><span>Panel</span></a>
+        <a href="#/nueva" data-nav="nueva"><span class="nav-ico" data-icon="plus"></span><span>Nueva</span></a>
+        <a href="#/calculadora" data-nav="calculadora"><span class="nav-ico" data-icon="calc"></span><span>Calculadora</span></a>
+        <a href="#/guia" data-nav="guia"><span class="nav-ico" data-icon="book"></span><span>Guía</span></a>
+        <a href="#/ajustes" data-nav="ajustes"><span class="nav-ico" data-icon="gear"></span><span>Ajustes</span></a>
+      </nav>
+    </header>
+    <main id="view" class="container" tabindex="-1"></main>
+    <footer class="footer no-print">
+      <p>
+        Prototipo de validación. Tus datos se guardan solo en este navegador. Cobrado no es un despacho de abogados ni
+        sustituye el asesoramiento profesional. <a href="../">Qué es Cobrado</a>
+      </p>
+    </footer>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <noscript><p class="container">Cobrado necesita JavaScript activado.</p></noscript>
+    <script type="module" src="./src/main.js"></script>
+    <script type="module">
+      import { icon } from "./src/ui/dom.js"
+      document.querySelectorAll("[data-icon]").forEach((el) => el.replaceWith(icon(el.dataset.icon, "nav-ico")))
+    </script>
+  </body>
+</html>

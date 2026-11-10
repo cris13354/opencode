@@ -1,0 +1,15 @@
+{
+  "name": "cobrado",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Recupera facturas impagadas paso a paso: recordatorios, intereses de la Ley 3/2004, requerimiento formal y expediente para el monitorio.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test test/*.test.js",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
